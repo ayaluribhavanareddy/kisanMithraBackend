@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Pesticides</title>
+    <link rel="stylesheet" href="peststyles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000080;
+        }
+
+        .header {
+            min-height: 5vh;
+            width: 100%;
+            background-color: rgb(15, 85, 11);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: center;
+            height: 10vh;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 20px;
+        }
+
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            margin-right: 20px;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            transition: width 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        header input[type="text"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        address a {
+            color: #000080;
+            text-decoration: none;
+        }
+
+        address a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="purchase.html">Purchasing</a></li>
+                        <li><a href="land.html">Landlease</a></li>
+                        <li><a href="pesticides.html">Pesticides</a></li>
+                        <li><a href="latesttech.html">Latest Tech Machinery</a></li>
+                        <li><a href="soilfer.html">Soil Fertility</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section id="insecticides">
+            <h3>Insecticides</h3>
+            <img src="images/in1.jpg" alt="Insecticides">
+            <img src="images/in2.jpg" alt="Insecticides">
+            <img src="images/in3.jpg" alt="Insecticides">
+            <img src="images/in4.jpg" alt="Insecticides">
+            <img src="images/in5.jpg" alt="Insecticides">
+            <p>Learn about insecticides and their role in controlling insect pests in agriculture.</p>
+        </section>
+
+        <section id="fungicides">
+            <h3>Fungicides</h3>
+            <img src="images/fu1.jpg" alt="Fungicides">
+            <img src="images/fu2.jpg" alt="Fungicides">
+            <img src="images/fu3.jpg" alt="Fungicides">
+            <img src="images/fu4.jpg" alt="Fungicides">
+            <img src="images/fu5.jpg" alt="Fungicides">
+            <p>Discover fungicides and how they are used to prevent and control fungal diseases in crops.</p>
+        </section>
+
+        <section id="rodenticides">
+            <h3>Rodenticides</h3>
+            <img src="images/ro1.jpg" alt="Rodenticides">
+            <img src="images/ro2.jpg" alt="Rodenticides">
+            <img src="images/ro33.jpg" alt="Rodenticides">
+            <img src="images/ro4.jpg" alt="Rodenticides">
+            <img src="images/ro5.jpg" alt="Rodenticides">
+            <p>Learn about rodenticides used for rodent control in agricultural settings.</p>
+        </section>
+
+        <section id="herbicides">
+            <h3>Herbicides</h3>
+            <img src="images/he1.jpg" alt="Herbicides">
+            <img src="images/he2.jpg" alt="Herbicides">
+            <img src="images/he4.jpg" alt="Herbicides">
+            <img src="images/he5.jpg" alt="Herbicides">
+            <p>Explore herbicides used to control weeds and unwanted plants in farming.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to contact us:</p>
+            <address>
+                Email: <a href="mailto:info@agripesticides.com">info@agripesticides.com</a><br>
+                Phone: <a href="tel:+1234567890">+1234567890</a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Agricultural Pesticides. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptpest.js"></script>
+</body>
+
+</html>

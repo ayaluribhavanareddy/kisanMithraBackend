@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#userType {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Additional styling for crop listings, prebooking, cart, and wishlist can be added here */
+/* Existing CSS styles */
+
+/* Styling for crop listings */
+.crop {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+/* Styling for prebooking button */
+button.prebook {
+    background-color: #f39c12;
+}
+
+/* Styling for cart button */
+button.cart {
+    background-color: #3498db;
+}
+
+/* Styling for wishlist button */
+button.wishlist {
+    background-color: #e74c3c;
+}

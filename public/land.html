@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <style>
+      
+body {
+    font-family: Arial, sans-serif;
+    color: #000080;
+  }
+
+.header {
+    min-height: 5vh;
+    width:100%;
+   background-color: rgb(10, 123, 4);
+    background-position:center;
+    background-size: cover;
+   position: relative;
+           
+  }
+  
+nav ul {
+    display: flex;
+ba
+ 
+  }
+
+  .nav-links{
+    flex: 1;
+    text-align:center;
+    height: 10vh;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px;
+   
+
+  }
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  margin-right: 20px;
+ 
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+  
+    transition: 0.5;
+
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+
+  }
+    </style>
+
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                
+                <div class="nav-links">
+                    <ul>
+
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="purchase.html">Purchasing</a> </li>
+                        <li><a href="land.html">Landlease</a>
+                        <li><a href="pesticides.html">Pesticides</a>
+                            <li><a href="latesttech.html">Latest tech machinery</a>    
+                        <li><a href="soilfer.html">Soil fertility</a>
+                        <li><a
+                                href="contact.html">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           
+        </section>
+   </header>     
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landstyles.css">
+    <title>Land Leasing System</title>
+</head>
+<body>
+    <h1>Land Leasing System</h1>
+
+    <div id="userTypeSelection" class="form-container">
+        <h2>Select User Type</h2>
+        <label>
+            <input type="radio" name="userType" value="landOwner"> Land Owner
+        </label>
+        <label>
+            <input type="radio" name="userType" value="farmer"> Farmer
+        </label>
+    </div>
+
+    <div id="landOwnerForm" class="form-container hidden">
+        <h2>Land Owner Information</h2>
+        <form id="ownerForm">
+            <label for="location">Location of Land:</label>
+            <input type="text" id="location" required>
+            <label for="acres">Acres of Land:</label>
+            <input type="number" id="acres" required>
+            <label for="expectedAmount">Expected Lease Amount:</label>
+            <input type="number" id="expectedAmount" required>
+            <label for="ownerPhone">Phone Number:</label>
+            <input type="tel" id="ownerPhone" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="farmerForm" class="form-container hidden">
+        <h2>Farmer Information</h2>
+        <form id="farmerForm">
+            <label for="farmerName">Name:</label>
+            <input type="text" id="farmerName" required>
+            <label for="farmerLocation">Location for Land Lease:</label>
+            <input type="text" id="farmerLocation" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="landList" class="hidden">
+        <h2>Available Land for Lease</h2>
+        <ul></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

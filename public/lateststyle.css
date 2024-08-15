@@ -1,0 +1,44 @@
+/* Your CSS styles for header, main content, and footer here */
+
+/* Style the header */
+header {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+/* Style the videos section */
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style individual video containers */
+.video-container {
+    width: 300px;
+    margin: 20px;
+}
+
+/* Style the video title and availability */
+.video-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-availability {
+    color: black;
+}
+body {
+    background-color: green;
+}
